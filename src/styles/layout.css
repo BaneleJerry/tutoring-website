@@ -1,0 +1,30 @@
+.container {
+  max-width: inherit;
+  margin: 0 auto;
+  padding: 0 var(--space-sm);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+}
+
+.section {
+  padding: var(--space-lg) 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
