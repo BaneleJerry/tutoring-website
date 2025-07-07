@@ -9,17 +9,16 @@ const About = () => {
     <section className="section about-section">
       <div className="about-container">
         <div className="about-text">
-          <h2>About Us</h2>
+          <h2>Our Story</h2>
           <p>
-            At Lumos Tutoring Academy, we are dedicated to empowering students
-            to achieve their academic goals. Our experienced tutors provide
-            personalized instruction in a wide range of subjects, including
-            Math, Science, English, and more.
-          </p>
-          <p>
-            We believe that every student has the potential to succeed, and we
-            are here to help them reach their full potential through tailored
-            tutoring sessions.
+            Lumos Tutoring Academy is a registered business with the CIPC,
+            founded in 2023 on the belief that every student has the potential
+            to excel with the right guidance. We saw the need for a learning
+            environment that fosters not just academic success, but also
+            confidence, discipline, and a deeper understanding of subjects. Our
+            mission is to equip students with critical thinking skills and
+            effective learning strategies that extend beyond the classroom,
+            helping them build a strong foundation for future success.
           </p>
         </div>
         <div className="about-image">

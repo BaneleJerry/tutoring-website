@@ -7,6 +7,7 @@ import Features from "../components/features";
 import About from "../components/about us/about";
 import Subjects from "../components/subjects/subjects";
 import Contact from "../components/contact us/contact";
+import Pricing from "../components/pricing/pricing";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Hero />
       <About />
       <Subjects />
+      <Pricing />
       <Contact />
       
       {/* <Features /> */}

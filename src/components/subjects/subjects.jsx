@@ -6,21 +6,34 @@ import mathIcon from "../../assets/icons/math.png"; // Used for Math
 import scienceIcon from "../../assets/icons/science.png";
 import lifeIcon from "../../assets/icons/virus.png"; // Used for Life Science
 import accountingIcon from "../../assets/icons/accounting.png";
-import englishIcon from "../../assets/icons/english.png";
+import geographyIcon from "../../assets/icons/geography.png";
+import businessIcon from "../../assets/icons/business-and-finance.png"; // Used for English
 
 const subjects = [
   { title: "Math", icon: mathIcon },
   { title: "Physical Science", icon: scienceIcon },
   { title: "Life Science", icon: lifeIcon },
   { title: "Accounting", icon: accountingIcon },
-  { title: "English", icon: englishIcon },
+  { title: "Geography", icon: geographyIcon },
+  { title: "Business Studies", icon: businessIcon },
 ];
 
 const Subjects = () => {
   return (
     <section className="subjects-section">
       <div className="subjects-container">
-        <h2>Subjects We Offer</h2>
+        <h2>Our Courses</h2>
+        <p className="subjects-intro">
+          At Lumos Tutoring Academy, we offer high-quality tutoring for students
+          in both the IEB and CAPS curricula. Our personalized approach ensures
+          that each student receives the guidance they need — whether it's
+          foundational support, subject mastery, or exam preparation.
+          <br />
+          <br />
+          Giving students the academic advantage they deserve!
+        </p>
+
+        <h2>Subjects We Offer . . .</h2>
         <div className="subjects-grid">
           {subjects.map((subject, index) => (
             <div className="subject-card" key={index}>

@@ -14,6 +14,13 @@
   margin-bottom: 2rem;
   color: #222;
 }
+.subjects-intro {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+  line-height: 1.6;
+}
 
 .subjects-grid {
   display: grid;
