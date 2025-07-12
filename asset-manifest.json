@@ -1,24 +1,31 @@
 {
   "files": {
-    "main.css": "/tutoring-website/static/css/main.a33fffab.css",
-    "main.js": "/tutoring-website/static/js/main.133f6ba6.js",
-    "static/js/453.1b577ced.chunk.js": "/tutoring-website/static/js/453.1b577ced.chunk.js",
-    "static/media/Lumos-logo-Black.png": "/tutoring-website/static/media/Lumos-logo-Black.fba0a21df8ef3d7738f5.png",
-    "static/media/contact-hero.webp": "/tutoring-website/static/media/contact-hero.dd1e41cbc7f83c6c877d.webp",
-    "static/media/tutor-teaching.webp": "/tutoring-website/static/media/tutor-teaching.6d2f708ca37a87929000.webp",
-    "static/media/virus.png": "/tutoring-website/static/media/virus.4e9ab227ae1ddea14e07.png",
-    "static/media/science.png": "/tutoring-website/static/media/science.1bcbd2198a01ed7af403.png",
-    "static/media/student-hero .webp": "/tutoring-website/static/media/student-hero .a6fc3bd4354807863f9d.webp",
-    "static/media/english.png": "/tutoring-website/static/media/english.9c170a251fd6cbe15b9a.png",
-    "static/media/math.png": "/tutoring-website/static/media/math.ef69263e08a77f9a32eb.png",
-    "static/media/accounting.png": "/tutoring-website/static/media/accounting.9b9e11624095287367f2.png",
-    "index.html": "/tutoring-website/index.html",
-    "main.a33fffab.css.map": "/tutoring-website/static/css/main.a33fffab.css.map",
-    "main.133f6ba6.js.map": "/tutoring-website/static/js/main.133f6ba6.js.map",
-    "453.1b577ced.chunk.js.map": "/tutoring-website/static/js/453.1b577ced.chunk.js.map"
+    "main.css": "/static/css/main.b6880160.css",
+    "main.js": "/static/js/main.939ac5cc.js",
+    "static/js/453.7a7740a1.chunk.js": "/static/js/453.7a7740a1.chunk.js",
+    "static/media/Lumos-logo-Black.png": "/static/media/Lumos-logo-Black.fba0a21df8ef3d7738f5.png",
+    "static/media/tutor-teaching.webp": "/static/media/tutor-teaching.6d2f708ca37a87929000.webp",
+    "static/media/virus.png": "/static/media/virus.4e9ab227ae1ddea14e07.png",
+    "static/media/geography.png": "/static/media/geography.a212230cf9b83ef83ca2.png",
+    "static/media/science.png": "/static/media/science.1bcbd2198a01ed7af403.png",
+    "static/media/student-hero .webp": "/static/media/student-hero .a6fc3bd4354807863f9d.webp",
+    "static/media/business-and-finance.png": "/static/media/business-and-finance.225300328f2c0d8e0f26.png",
+    "static/media/math.png": "/static/media/math.ef69263e08a77f9a32eb.png",
+    "static/media/accounting.png": "/static/media/accounting.9b9e11624095287367f2.png",
+    "static/media/whatsapp.png": "/static/media/whatsapp.b1b801cf0375045d4f69.png",
+    "static/media/mail.png": "/static/media/mail.f37667403f0f2e9450fe.png",
+    "static/media/tik-tok.png": "/static/media/tik-tok.c318ec553ece991e2d32.png",
+    "static/media/instagram.png": "/static/media/instagram.9836f120000f0e2b6e3c.png",
+    "static/media/phakama.avif": "/static/media/phakama.b962ee04983cc96df1cb.avif",
+    "static/media/thando.avif": "/static/media/thando.82026026843e4b3a5403.avif",
+    "static/media/sbu.avif": "/static/media/sbu.8a01b55c47a6a7e4f88a.avif",
+    "index.html": "/index.html",
+    "main.b6880160.css.map": "/static/css/main.b6880160.css.map",
+    "main.939ac5cc.js.map": "/static/js/main.939ac5cc.js.map",
+    "453.7a7740a1.chunk.js.map": "/static/js/453.7a7740a1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a33fffab.css",
-    "static/js/main.133f6ba6.js"
+    "static/css/main.b6880160.css",
+    "static/js/main.939ac5cc.js"
   ]
 }
