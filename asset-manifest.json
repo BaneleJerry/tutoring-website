@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/tutoring-website/static/css/main.b6880160.css",
+    "main.css": "/tutoring-website/static/css/main.29cd2211.css",
     "main.js": "/tutoring-website/static/js/main.ae47ea66.js",
     "static/js/453.08439a1f.chunk.js": "/tutoring-website/static/js/453.08439a1f.chunk.js",
     "static/media/Lumos-logo-Black.png": "/tutoring-website/static/media/Lumos-logo-Black.fba0a21df8ef3d7738f5.png",
@@ -20,12 +20,12 @@
     "static/media/thando.avif": "/tutoring-website/static/media/thando.82026026843e4b3a5403.avif",
     "static/media/sbu.avif": "/tutoring-website/static/media/sbu.8a01b55c47a6a7e4f88a.avif",
     "index.html": "/tutoring-website/index.html",
-    "main.b6880160.css.map": "/tutoring-website/static/css/main.b6880160.css.map",
+    "main.29cd2211.css.map": "/tutoring-website/static/css/main.29cd2211.css.map",
     "main.ae47ea66.js.map": "/tutoring-website/static/js/main.ae47ea66.js.map",
     "453.08439a1f.chunk.js.map": "/tutoring-website/static/js/453.08439a1f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6880160.css",
+    "static/css/main.29cd2211.css",
     "static/js/main.ae47ea66.js"
   ]
 }
