@@ -20,7 +20,7 @@ const subjects = [
 
 const Subjects = () => {
   return (
-    <section className="subjects-section">
+    <section className="subjects-section" id="subjects">
       <div className="subjects-container">
         <h2>Our Courses</h2>
         <p className="subjects-intro">

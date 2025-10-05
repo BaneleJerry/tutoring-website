@@ -1,17 +1,20 @@
+/* SECTION */
 .contact-section {
-  background-color: #f5f9fc;
+  background-color: var(--color-bg-light);
   padding: 4rem 2rem;
 }
 
+/* CONTAINER */
 .contact-container {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   gap: 2rem;
 }
 
+/* LEFT SIDE */
 .contact-text {
   flex: 1;
   min-width: 300px;
@@ -19,16 +22,17 @@
 
 .contact-text h2 {
   font-size: 2.2rem;
-  color: #222;
+  color: var(--color-primary);
   margin-bottom: 1rem;
 }
 
 .contact-text p {
   font-size: 1.1rem;
-  color: #555;
+  color: var(--color-secondary);
   margin-bottom: 2rem;
 }
 
+/* BUTTONS */
 .contact-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -40,43 +44,143 @@
   border-radius: 8px;
   font-weight: 600;
   text-decoration: none;
-  transition: background-color 0.3s ease;
-  color: white;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  color: var(--color-highlight);
   display: inline-block;
 }
 
+.contact-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* BUTTON COLORS (neutral tones to fit flyer aesthetic) */
 .whatsapp {
-  background-color: #25d366;
+  background-color: #4CAF50;
 }
 
 .whatsapp:hover {
-  background-color: #1da851;
+  background-color: #3b8f41;
 }
 
 .email {
-  background-color: #007bff;
+  background-color: var(--color-secondary);
 }
 
 .email:hover {
-  background-color: #0062cc;
+  background-color: #1a1a1a;
 }
 
 .book {
-  background-color: #00bfa6;
+  background-color: var(--color-accent-grey);
+  color: var(--color-primary);
 }
 
 .book:hover {
-  background-color: #009e8a;
+  background-color: #8c8c8c;
+  color: var(--color-highlight);
 }
 
-.contact-image {
+/* FORM */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem;
+  border: 1px solid var(--color-accent-grey);
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: var(--color-highlight);
+  color: var(--color-secondary);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--color-secondary);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+}
+
+/* SUBMIT BUTTON */
+.contact-btn.submit {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  background-color: var(--color-primary);
+  color: var(--color-highlight);
+  font-weight: 600;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-btn.submit:hover {
+  background-color: var(--color-secondary);
+  transform: translateY(-2px);
+}
+
+.icon-img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+/* RIGHT SIDE (SOCIALS) */
+.contact-socials {
   flex: 1;
   min-width: 300px;
+  background-color: var(--color-highlight);
+  color: var(--color-secondary);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-.contact-image img {
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  object-fit: cover;
+.contact-socials h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+}
+
+.contact-socials ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-socials li {
+  margin: 0.5rem 0;
+}
+
+.contact-socials a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: var(--color-secondary);
+  transition: color 0.2s ease;
+}
+
+.contact-socials a:hover {
+  color: var(--color-primary);
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--color-secondary);
+  margin-bottom: 0.75rem;
+}
+
+.social-link:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
 }

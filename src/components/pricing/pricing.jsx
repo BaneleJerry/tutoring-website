@@ -1,5 +1,6 @@
 import React from "react";
 import "./pricing.css";
+import { useNavigate } from "react-router-dom";
 
 const plans = [
   {
@@ -8,27 +9,28 @@ const plans = [
     description:
       "This fixed monthly fee offers incredible value, granting students access to all subjects we offer without additional charges per subject.",
   },
-  {
-    title: "Premium Plan",
-    price: "R699",
-    description:
-      "For students needing more intensive support: includes additional classes, undivided attention, and personalized resources for enhanced understanding.",
-  },
+  // {
+  //   title: "Premium Plan",
+  //   price: "R699",
+  //   description:
+  //     "For students needing more intensive support: includes additional classes, undivided attention, and personalized resources for enhanced understanding.",
+  // },
   {
     title: "Family Special (2 Members)",
     price: "R799",
     description:
       "Enroll two family members for a discounted rate, granting both access to all subjects without additional charges per subject.",
   },
-  {
-    title: "Family Special (3 Members)",
-    price: "R1199",
-    description:
-      "Enroll three family members for an even greater discounted rate, granting all access to all subjects without additional charges per subject.",
-  },
+  // {
+  //   title: "Family Special (3 Members)",
+  //   price: "R1199",
+  //   description:
+  //     "Enroll three family members for an even greater discounted rate, granting all access to all subjects without additional charges per subject.",
+  // },
 ];
 
 const Pricing = () => {
+  const navigate = useNavigate();
   return (
     <section className="pricing-section">
       <div className="pricing-container">
@@ -56,6 +58,11 @@ const Pricing = () => {
               <p>{plan.description}</p>
             </div>
           ))}
+        </div>
+        <div className="faq-button-container">
+          <button className="faq-button" onClick={() => navigate("/faq")}>
+            Frequently Asked Questions
+          </button>
         </div>
       </div>
     </section>

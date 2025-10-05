@@ -1,11 +1,11 @@
 :root {
-  /* Colors */
-  --color-primary: #ffffff;
-  --color-secondary: #000000;
-
-  --color-accent: #00bfa6;
-  --color-highlight: #ffd700;
-  --color-soft: #f4a28c;
+/* Colors from flyer */
+--color-primary: #000000;      /* Primary (Black) - Main text, headers, and logo */
+  --color-secondary: #333333;    /* Secondary (Dark Grey) - Body text, borders, and dividers */
+  --color-accent-grey: #A6A6A6;  /* Accent Grey - Muted accents or subtext */
+  --color-bg-light: #F5F5F5;     /* Background Light Grey - Page or section background */
+  --color-highlight: #FFFFFF;    /* Highlight / Soft White - Containers, cards, text areas */
+  --color-accent-warm: #EAE8E6;
 
   /* Typography */
   --font-sans: "Segoe UI", sans-serif;

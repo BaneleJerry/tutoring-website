@@ -2,7 +2,7 @@ import React from "react";
 import "../../styles/theme.css";
 import "../../styles/layout.css";
 import "./about.css"; // Assuming you have an about.css file for additional styles
-import tutorImage from "../../assets/tutor-teaching.webp"; // Replace with your actual image path
+import tutorImage from "../../assets/student-tutor.jpg"; // Replace with your actual image path
 
 const About = () => {
   return (
