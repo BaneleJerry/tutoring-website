@@ -1,14 +1,20 @@
 {
   "files": {
-    "main.css": "/tutoring-website/static/css/main.29cd2211.css",
-    "main.js": "/tutoring-website/static/js/main.ae47ea66.js",
+    "main.css": "/tutoring-website/static/css/main.2fc7cec0.css",
+    "main.js": "/tutoring-website/static/js/main.8ebd34fb.js",
     "static/js/453.08439a1f.chunk.js": "/tutoring-website/static/js/453.08439a1f.chunk.js",
+    "static/media/sbu.jpg": "/tutoring-website/static/media/sbu.dca3d6e13728f5b4e411.jpg",
+    "static/media/student-tutor.jpg": "/tutoring-website/static/media/student-tutor.d773c6b058da17655427.jpg",
+    "static/media/thando.jpg": "/tutoring-website/static/media/thando.0b0d6a9890d3ba1c7a13.jpg",
+    "static/media/Siyabonga.jpg": "/tutoring-website/static/media/Siyabonga.bfaa730a7229b2e57cc8.jpg",
+    "static/media/phakama.jpg": "/tutoring-website/static/media/phakama.4e0929372d83039d8b6c.jpg",
+    "static/media/lerato.jpeg": "/tutoring-website/static/media/lerato.40216ce7f4f922a09d76.jpeg",
+    "static/media/boitumelo 2.jpg": "/tutoring-website/static/media/boitumelo 2.7316dfa00ae727839bad.jpg",
     "static/media/Lumos-logo-Black.png": "/tutoring-website/static/media/Lumos-logo-Black.fba0a21df8ef3d7738f5.png",
-    "static/media/tutor-teaching.webp": "/tutoring-website/static/media/tutor-teaching.6d2f708ca37a87929000.webp",
+    "static/media/hero.jpg": "/tutoring-website/static/media/hero.21727c48ec986cab5205.jpg",
     "static/media/virus.png": "/tutoring-website/static/media/virus.4e9ab227ae1ddea14e07.png",
     "static/media/geography.png": "/tutoring-website/static/media/geography.a212230cf9b83ef83ca2.png",
     "static/media/science.png": "/tutoring-website/static/media/science.1bcbd2198a01ed7af403.png",
-    "static/media/student-hero .webp": "/tutoring-website/static/media/student-hero .a6fc3bd4354807863f9d.webp",
     "static/media/business-and-finance.png": "/tutoring-website/static/media/business-and-finance.225300328f2c0d8e0f26.png",
     "static/media/math.png": "/tutoring-website/static/media/math.ef69263e08a77f9a32eb.png",
     "static/media/accounting.png": "/tutoring-website/static/media/accounting.9b9e11624095287367f2.png",
@@ -16,16 +22,13 @@
     "static/media/mail.png": "/tutoring-website/static/media/mail.f37667403f0f2e9450fe.png",
     "static/media/tik-tok.png": "/tutoring-website/static/media/tik-tok.c318ec553ece991e2d32.png",
     "static/media/instagram.png": "/tutoring-website/static/media/instagram.9836f120000f0e2b6e3c.png",
-    "static/media/phakama.avif": "/tutoring-website/static/media/phakama.b962ee04983cc96df1cb.avif",
-    "static/media/thando.avif": "/tutoring-website/static/media/thando.82026026843e4b3a5403.avif",
-    "static/media/sbu.avif": "/tutoring-website/static/media/sbu.8a01b55c47a6a7e4f88a.avif",
     "index.html": "/tutoring-website/index.html",
-    "main.29cd2211.css.map": "/tutoring-website/static/css/main.29cd2211.css.map",
-    "main.ae47ea66.js.map": "/tutoring-website/static/js/main.ae47ea66.js.map",
+    "main.2fc7cec0.css.map": "/tutoring-website/static/css/main.2fc7cec0.css.map",
+    "main.8ebd34fb.js.map": "/tutoring-website/static/js/main.8ebd34fb.js.map",
     "453.08439a1f.chunk.js.map": "/tutoring-website/static/js/453.08439a1f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.29cd2211.css",
-    "static/js/main.ae47ea66.js"
+    "static/css/main.2fc7cec0.css",
+    "static/js/main.8ebd34fb.js"
   ]
 }
