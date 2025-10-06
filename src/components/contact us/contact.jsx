@@ -77,7 +77,7 @@ const Contact = () => {
             </li>
             <li>
               <a
-                href="https://wa.me/919167777777"
+                href="https://wa.me/27781861196"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-link">
