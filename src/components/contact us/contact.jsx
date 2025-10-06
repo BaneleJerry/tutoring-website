@@ -97,7 +97,7 @@ const Contact = () => {
             </li>
             <li>
               <a
-                href="https://www.facebook.com/lumostutoringacademy"
+                href="https://www.facebook.com/Lumos-Tutoring-Academy-61575170955220/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-link">
