@@ -16,12 +16,12 @@ const faqs = [
   {
     question: "What does the tutoring fee include?",
     answer:
-      "For R499/month, your child receives tuition for up to 4 subjects, group and one-on-one online tutoring sessions, access to downloadable notes, past exam papers, and learning guides, plus performance check-ins and academic feedback.",
+      "We have recorded sessions of the live classes, so students don’t miss out on work.Students can watch the session at their own pace before the next class.",
   },
   {
     question: "What is the session schedule?",
     answer:
-      "Sessions are offered 2–5 times a week per student, with each session lasting 1 hour 30 minutes. Students receive a timetable for afternoon classes. For one-on-one sessions, students can consult with their respective tutors for availability.",
+      "Sessions are offered 2–5 times a week per student, with each session lasting up to 1 hour 30 minutes. Students receive a timetable for afternoon classes. For one-on-one sessions, students can consult with their respective tutors for availability.",
   },
   {
     question: "How do I track my child’s progress?",

@@ -135,3 +135,17 @@
     color: var(--color-primary);
   }
 }
+
+.header-nav .nav-btn {
+  background: none;
+  border: none;
+  color: var(--color-secondary);
+  font: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0;
+}
+
+.header-nav .nav-btn:hover {
+  color: var(--color-accent-grey);
+}

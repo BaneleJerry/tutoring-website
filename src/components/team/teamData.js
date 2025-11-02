@@ -3,19 +3,19 @@ import sbuImage from "../../assets/team/sbu.jpg";
 import phakamaImage from "../../assets/team/phakama.jpg";
 import boitumeloImage from "../../assets/team/boitumelo 2.jpg";
 import leratoImage from "../../assets/team/lerato.jpeg";
-import siyaImage from "../../assets/team/Siyabonga.jpg";
+import siyaImage from "../../assets/team/Siyabonga1.jpg";
 
 export const teamData = [
   {
     name: "Thando Zamisa",
-    role: "Founder \n Mathematics & Physical Science Lead",
+    role: "Lead Mathematics and Physical Science",
     image: thandoIMage,
     description:
       "If someone has a reasoning capicity and the ability to comprehend minor situations, they can excel in education",
   },
   {
     name: "S'busiso Ndlovu ",
-    role: "Life Science and Mathematics Lead Tutor",
+    role: "Life Science Lead Tutor and Mathematics Sub Tutor",
     image: sbuImage,
     description:
       "All you can do is all you can do, and all you can do is enough but make sure all you do is all you can do so there aren't any regrets.",
@@ -43,7 +43,7 @@ export const teamData = [
   },
   {
     name: "Siyabonga Zwane",
-    role: "Geography Lead tutor ",
+    role: "Geography Lead and Life Sciences Sub Teacher",
     image: siyaImage,
     description: "Practice prevents poor performance.",
   },

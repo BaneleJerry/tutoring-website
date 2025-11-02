@@ -8,8 +8,10 @@ import Subjects from "../components/subjects/subjects";
 import Contact from "../components/contact us/contact";
 import Pricing from "../components/pricing/pricing";
 import TeamSection from "../components/team/teamSection";
+import { useHashScroll } from "../hooks/useHashScroll.";
 
 const Home = () => {
+  useHashScroll();
   return (
     <>
       <Hero />
@@ -18,7 +20,7 @@ const Home = () => {
       <Pricing />
       <TeamSection />
       <Contact />
-      
+
       {/* <Features /> */}
       <Footer />
     </>
