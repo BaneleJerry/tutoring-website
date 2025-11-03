@@ -33,7 +33,7 @@ const Subjects = () => {
           Giving students the academic advantage they deserve!
         </p>
 
-        <h2>Subjects We Offer . . .</h2>
+        <h2>Subjects We Offer</h2>
         <div className="subjects-grid">
           {subjects.map((subject, index) => (
             <div className="subject-card" key={index}>
