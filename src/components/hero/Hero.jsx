@@ -17,7 +17,7 @@ const Hero = () => {
             'L'
           </p>
           <a href="#contact" className="hero-btn">
-            Contact Us
+            Start Today
           </a>
         </div>
       </div>
