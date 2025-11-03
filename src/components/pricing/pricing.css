@@ -69,11 +69,24 @@
   line-height: 1.6;
 }
 
+.benefits-list {
+  list-style: disc;
+  margin: 1rem 0 0 1.5rem;
+  text-align: left;
+}
+
+.benefits-list li {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+
 /* --- FAQ Button --- */
 .faq-button-container {
   text-align: center;
   margin-top: 3rem;
 }
+
 
 .faq-button {
   background-color: var(--color-primary); /* Strong black for contrast */

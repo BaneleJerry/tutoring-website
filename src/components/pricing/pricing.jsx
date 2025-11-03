@@ -6,31 +6,26 @@ const plans = [
   {
     title: "Standard Plan",
     price: "R499",
-    description:
-      "This fixed monthly fee offers incredible value, granting students access to all subjects we offer without additional charges per subject.",
+    benefits: [
+      "Access to all subjects with no extra charges per subject",
+      "One fixed monthly payment for predictable budgeting",
+      "Encourages exploration of different study areas",
+    ],
   },
-  // {
-  //   title: "Premium Plan",
-  //   price: "R699",
-  //   description:
-  //     "For students needing more intensive support: includes additional classes, undivided attention, and personalized resources for enhanced understanding.",
-  // },
   {
     title: "Family Special (2 Members)",
     price: "R799",
-    description:
-      "Enroll two family members for a discounted rate, granting both access to all subjects without additional charges per subject.",
+    benefits: [
+      "Covers two family members under one discounted plan",
+      "Full access to all subjects for both members",
+      "Affordable option for families seeking flexible learning support",
+    ],
   },
-  // {
-  //   title: "Family Special (3 Members)",
-  //   price: "R1199",
-  //   description:
-  //     "Enroll three family members for an even greater discounted rate, granting all access to all subjects without additional charges per subject.",
-  // },
 ];
 
 const Pricing = () => {
   const navigate = useNavigate();
+
   return (
     <section className="pricing-section">
       <div className="pricing-container">
@@ -55,10 +50,15 @@ const Pricing = () => {
               <div className="price">
                 {plan.price} <span>/ month</span>
               </div>
-              <p>{plan.description}</p>
+              <ul className="benefits-list">
+                {plan.benefits.map((benefit, i) => (
+                  <li key={i}>{benefit}</li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
+
         <div className="faq-button-container">
           <button className="faq-button" onClick={() => navigate("/faq")}>
             Frequently Asked Questions
