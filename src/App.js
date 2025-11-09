@@ -5,7 +5,7 @@ import "./styles/typography.css";
 import "./styles/layout.css";
 
 import Home from "./pages/Home";
-// import Pricing from "./pages/Pricing";
+import RegistrationForm from "./pages/RegistrationForm";
 import FAQ from "./pages/Faq";
 import Header from "./components/header/Header";
 
@@ -15,7 +15,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/pricing" element={<Pricing />} /> */}
+        <Route path="/registration" element={<RegistrationForm />} />
         <Route path="/faq" element={<FAQ />} />
       </Routes>
     </Router>

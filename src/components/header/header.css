@@ -79,7 +79,7 @@
   width: 100%;
 }
 
-/* --- MOBILE MENU --- */
+/* MOBILE MENU BUTTON */
 .menu-toggle {
   display: none;
   background: none;
@@ -88,15 +88,22 @@
   font-size: 1.5rem;
   cursor: pointer;
   transition: color 0.3s ease;
+  max-width: fit-content;
 }
 
 .menu-toggle:hover {
   color: var(--color-primary);
 }
 
+/* MOBILE RESPONSIVENESS */
 @media (max-width: 790px) {
   .menu-toggle {
     display: block;
+  }
+
+  /* Hide site name but keep logo visible */
+  .site-title {
+    display: none;
   }
 
   .header-nav {

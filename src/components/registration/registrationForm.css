@@ -1,0 +1,127 @@
+.registration-form {
+  max-width: 800px;
+  margin: var(--space-lg) auto;
+  padding: var(--space-lg);
+  background-color: var(--color-highlight);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: var(--font-sans);
+  color: var(--color-secondary);
+}
+
+/* Headings */
+.registration-form h1 {
+  text-align: center;
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  margin-bottom: var(--space-md);
+}
+
+.registration-form h2, 
+.registration-form h3 {
+  font-size: var(--font-size-lg);
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+}
+
+/* Form layout */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+/* Input fields */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: var(--space-sm);
+  border: 1px solid var(--color-accent-grey);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-base);
+  background-color: var(--color-bg-light);
+  color: var(--color-secondary);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--color-primary);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid for paired fields */
+.form-grid {
+  display: grid;
+  gap: var(--space-sm);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+/* Checkbox and radio groups */
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: var(--font-size-base);
+  color: var(--color-secondary);
+  cursor: pointer;
+}
+
+/* Buttons */
+button {
+  background-color: var(--color-primary);
+  color: var(--color-highlight);
+  border: none;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+button:hover {
+  background-color: var(--color-secondary);
+}
+
+/* Navigation buttons */
+.form-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+/* Attribution and helper text */
+.attribution,
+.helper-text {
+  font-size: var(--font-size-sm);
+  color: var(--color-accent-grey);
+  text-align: center;
+  margin-top: var(--space-md);
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .registration-form {
+    padding: var(--space-lg);
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .form-nav {
+    flex-direction: column;
+  }
+}

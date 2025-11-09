@@ -1,6 +1,8 @@
 import React from "react";
 import "./Hero.css";
 import heroImg from "../../assets/team/hero-1.jpg";
+import { Link } from "react-router-dom";
+
 
 const Hero = () => {
   return (
@@ -16,9 +18,9 @@ const Hero = () => {
             <span className="lumos-text">Lumos</span> — Bringing Light to the
             'L'
           </p>
-          <a href="#contact" className="hero-btn">
+          <Link to='/registration' className="hero-btn">
             Start Today
-          </a>
+          </Link>
         </div>
       </div>
     </section>
