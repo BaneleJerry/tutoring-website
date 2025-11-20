@@ -1,7 +1,7 @@
 import React from "react";
 import "./Hero.css";
 
-import heroDesktop from "../../assets/team/_MGL4222 (3).jpg";
+import heroDesktop from "../../assets/team/hero-desktop.jpg";
 import heroTablet from "../../assets/team/hero-tablet-1280x900.jpg";
 import heroMobile from "../../assets/team/_MGL4220 (1).jpg";
 
