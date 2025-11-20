@@ -82,7 +82,8 @@
   font-weight: 700;
 }
 @media (max-width: 768px) {
-  .hero-background {
-    object-position: right; /* Focus the right side of the image */
+  .hero-background img{
+    height: auto;
+    width: fit-content; 
   }
 }
