@@ -1,0 +1,371 @@
+diff --git a/src/components/Faq/Faq.jsx b/src/components/Faq/Faq.jsx
+index 6265a77..faff89f 100644
+--- a/src/components/Faq/Faq.jsx
++++ b/src/components/Faq/Faq.jsx
+@@ -16,7 +16,7 @@ const faqs = [
+   {
+     question: "What does the tutoring fee include?",
+     answer:
+-      "We have recorded sessions of the live classes, so students don’t miss out on work.Students can watch the session at their own pace before the next class.",
++      "For R499/month, your child receives tuition for up to 4 subjects, group and one-on-one online tutoring sessions, access to downloadable notes, past exam papers, and learning guides, plus performance check-ins and academic feedback.",
+   },
+   {
+     question: "What is the session schedule?",
+@@ -31,7 +31,7 @@ const faqs = [
+   {
+     question: "What happens if a session is missed?",
+     answer:
+-      "If a student misses a session without 24-hour notice, it is not refundable. However, we do offer make-up sessions for valid reasons (technical issues, emergencies, etc.) when notified in advance.",
++      "We have recorded sessions of the live classes, so students don’t miss out on work.Students can watch the session at their own pace before the next class",
+   },
+   {
+     question: "How are payments made?",
+diff --git a/src/components/contact us/contact.jsx b/src/components/contact us/contact.jsx
+index 4dc12de..b0cf140 100644
+--- a/src/components/contact us/contact.jsx	
++++ b/src/components/contact us/contact.jsx	
+@@ -13,8 +13,8 @@ const Contact = () => {
+ 
+     emailjs
+       .sendForm(
+-        "service_2suyz6d", // replace with your EmailJS Service ID
+-        "template_s5alo6s", // replace with your EmailJS Template ID
++        "service_2suyz6d", // replace with your EmailJS 
++        "template_s5alo6s", 
+         e.target,
+         "J4x3pca13Ct4869XI" // your public key
+       )
+diff --git a/src/components/registration/StudentInfoForm.jsx b/src/components/registration/StudentInfoForm.jsx
+index 33bf134..5836127 100644
+--- a/src/components/registration/StudentInfoForm.jsx
++++ b/src/components/registration/StudentInfoForm.jsx
+@@ -1,16 +1,16 @@
+ import React, { useState } from "react";
+-import "./registrationForm.css"
++import "./registrationForm.css";
+ 
+-const StudentInfoForm = ({ onNext }) => {
++const StudentInfoForm = ({ onNext, formData }) => {
+   const [form, setForm] = useState({
+-    name: "",
+-    surname: "",
+-    grade: "",
+-    studentPhone: "",
+-    studentEmail: "",
+-    guardianName: "",
+-    guardianPhone: "",
+-    guardianEmail: "",
++    name: formData?.name || "",
++    surname: formData?.surname || "",
++    grade: formData?.grade || "",
++    studentPhone: formData?.studentPhone || "",
++    studentEmail: formData?.studentEmail || "",
++    guardianName: formData?.guardianName || "",
++    guardianPhone: formData?.guardianPhone || "",
++    guardianEmail: formData?.guardianEmail || "",
+   });
+ 
+   const handleChange = (e) => {
+@@ -25,16 +25,73 @@ const StudentInfoForm = ({ onNext }) => {
+       }}
+     >
+       <h2>Student Information</h2>
++
+       <div className="form-grid">
+-        <input name="name" placeholder="Name" onChange={handleChange} required />
+-        <input name="surname" placeholder="Surname" onChange={handleChange} required />
+-        <input name="grade" placeholder="Current Grade (or 'Upgrading')" onChange={handleChange} required />
+-        <input name="studentPhone" placeholder="Student Contact Number" onChange={handleChange} required />
+-        <input name="studentEmail" placeholder="Student Email" onChange={handleChange} required />
+-        <input name="guardianName" placeholder="Parent/Guardian Full Name" onChange={handleChange} required />
+-        <input name="guardianPhone" placeholder="Parent/Guardian Contact Number" onChange={handleChange} required />
+-        <input name="guardianEmail" placeholder="Parent/Guardian Email" onChange={handleChange} required />
++        <input 
++          name="name"
++          placeholder="Name"
++          value={form.name}
++          onChange={handleChange}
++          required
++        />
++
++        <input 
++          name="surname"
++          placeholder="Surname"
++          value={form.surname}
++          onChange={handleChange}
++          required
++        />
++
++        <input
++          name="grade"
++          placeholder="Current Grade (or 'Upgrading')"
++          value={form.grade}
++          onChange={handleChange}
++          required
++        />
++
++        <input
++          name="studentPhone"
++          placeholder="Student Contact Number"
++          value={form.studentPhone}
++          onChange={handleChange}
++          required
++        />
++
++        <input
++          name="studentEmail"
++          placeholder="Student Email"
++          value={form.studentEmail}
++          onChange={handleChange}
++          required
++        />
++
++        <input
++          name="guardianName"
++          placeholder="Parent/Guardian Name"
++          value={form.guardianName}
++          onChange={handleChange}
++          required
++        />
++
++        <input
++          name="guardianPhone"
++          placeholder="Parent/Guardian Number"
++          value={form.guardianPhone}
++          onChange={handleChange}
++          required
++        />
++
++        <input
++          name="guardianEmail"
++          placeholder="Parent/Guardian Email"
++          value={form.guardianEmail}
++          onChange={handleChange}
++          required
++        />
+       </div>
++
+       <button type="submit">Next</button>
+     </form>
+   );
+diff --git a/src/components/registration/registrationForm.css b/src/components/registration/registrationForm.css
+index e6a4bb0..2daf69e 100644
+--- a/src/components/registration/registrationForm.css
++++ b/src/components/registration/registrationForm.css
+@@ -63,20 +63,42 @@ textarea:focus {
+ 
+ /* Checkbox and radio groups */
+ .checkbox-group {
+-  display: flex;
+-  flex-wrap: wrap;
++  display: grid;
++  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+   gap: var(--space-sm);
++  margin-top: var(--space-sm);
+ }
+ 
+-.checkbox-group label {
++.checkbox-item {
+   display: flex;
+   align-items: center;
+   gap: var(--space-xs);
++  padding: var(--space-xs) var(--space-sm);
++  background: var(--color-highlight);
++  border: 1px solid var(--color-accent-grey);
++  border-radius: var(--radius-md);
++  cursor: pointer;
++  transition: background 0.2s ease, border-color 0.2s ease;
++}
++
++.checkbox-item:hover {
++  background: var(--color-bg-light);
++  border-color: var(--color-primary);
++}
++
++.checkbox-item input {
++  width: 18px;
++  height: 18px;
++  cursor: pointer;
++}
++
++.checkbox-item span {
+   font-size: var(--font-size-base);
+   color: var(--color-secondary);
+-  cursor: pointer;
++  font-weight: 500;
+ }
+ 
++
+ /* Buttons */
+ button {
+   background-color: var(--color-primary);
+@@ -114,7 +136,7 @@ button:hover {
+ /* Mobile adjustments */
+ @media (max-width: 600px) {
+   .registration-form {
+-    padding: var(--space-lg);
++    padding: var(--space-md);
+   }
+ 
+   button {
+@@ -125,3 +147,41 @@ button:hover {
+     flex-direction: column;
+   }
+ }
++
++/* --- Page Headings --- */
++
++form h1 {
++  font-size: var(--font-size-2xl);
++  font-weight: var(--font-weight-bold);
++  color: var(--color-primary);
++  margin-bottom: var(--space-sm);
++  font-family: var(--font-sans);
++  text-align: center;
++  line-height: 1.3;
++}
++
++form h6 {
++  font-size: var(--font-size-sm);
++  font-weight: var(--font-weight-normal);
++  color: var(--color-accent-warn);
++  margin-bottom: var(--space-md);
++  font-family: var(--font-sans);
++  text-align: center;
++  max-width: 600px;
++  margin-left: auto;
++  margin-right: auto;
++  line-height: 1.4;
++}
++
++/* Mobile tweaks */
++@media (max-width: 600px) {
++  form h1 {
++    font-size: var(--font-size-xl);
++  }
++
++  form h6 {
++    font-size: var(--font-size-base);
++    padding: 0 var(--space-sm);
++  }
++}
++
+diff --git a/src/pages/RegistrationForm.jsx b/src/pages/RegistrationForm.jsx
+index 912b4df..dff7b9f 100644
+--- a/src/pages/RegistrationForm.jsx
++++ b/src/pages/RegistrationForm.jsx
+@@ -1,22 +1,100 @@
+ import React, { useState } from "react";
++import emailjs from "emailjs-com";
+ import StudentInfoForm from "../components/registration/StudentInfoForm";
++import SubjectInfoForm from "../components/registration/SubjectInfoForm";
++import StudentProgresForm from "../components/registration/StudentProgresForm";
++import ReachForm from "../components/registration/ReachForm";
++import "../components/registration/registrationForm.css";
+ 
+ const RegistrationForm = () => {
+-    const [step, setStep] = useState(1);
+-    const [formData, setFormData] = useState({});
++  const [step, setStep] = useState(1);
++  const [formData, setFormData] = useState({});
+ 
+-    const handleNext = (data) => {
+-        setFormData({ ...formData, ...data });
+-        setStep(step + 1);
++  const updateField = (field, value) => {
++    setFormData({ ...formData, [field]: value });
++  };
++
++  const handleNext = (data) => {
++    setFormData({ ...formData, ...data });
++    setStep(step + 1);
++  };
++
++  const handleBack = () => {
++    setStep(step - 1);
++  };
++
++const handleSubmit = (childData) => {
++  // Merge parent and child data
++  const finalData = {
++    ...formData,   // parent data
++    ...childData,  // latest child values (reach, referrer)
++  };
++
++  // Build EmailJS temp form
++  const tempForm = document.createElement("form");
++
++  Object.keys(finalData).forEach((key) => {
++    const input = document.createElement("input");
++    input.type = "hidden";
++    input.name = key;
++
++    if (Array.isArray(finalData[key])) {
++      input.value = finalData[key].join(", "); // convert arrays to string
++    } else if (key === "subjectRatings") {
++      input.value = Object.entries(finalData.subjectRatings)
++        .map(([sub, rating]) => `${sub}: ${rating}`)
++        .join(", ");
++    } else {
++      input.value = finalData[key] || "";
++    }
++
++    tempForm.appendChild(input);
++  });
++
++    emailjs
++        .sendForm("service_2suyz6d", "template_h8s2dog", tempForm, "J4x3pca13Ct4869XI")
++        .then(() => {
++        alert("Message sent successfully ✅");
++        setFormData({});
++        setStep(1);
++        })
++        .catch((err) => alert("Error: " + err.text));
++
++    console.log("EmailJS data sent:", finalData);
+     };
+ 
+-    const handleBack = () => {setStep(step - 1);};
+ 
+-    return (
+-        <div className="registration-form">
+-            {step === 1 && <StudentInfoForm onNext={handleNext} />}
+-        </div>
+-    )
+-}
+ 
+-export default RegistrationForm;
+\ No newline at end of file
++  return (
++    <div className="registration-form">
++      {step === 1 && <StudentInfoForm onNext={handleNext} formData={formData} />}
++      {step === 2 && (
++        <SubjectInfoForm
++          onNext={handleNext}
++          onBack={handleBack}
++          formData={formData}
++          updateField={updateField}
++        />
++      )}
++      {step === 3 && (
++        <StudentProgresForm
++          onNext={handleNext}
++          onBack={handleBack}
++          formData={formData}
++          updateField={updateField}
++        />
++      )}
++      {step === 4 && (
++        <ReachForm
++          onNext={handleNext}
++          onBack={handleBack}
++          formData={formData}
++          updateField={updateField}
++          onSubmit={handleSubmit} // call EmailJS on final submit
++        />
++      )}
++    </div>
++  );
++};
++
++export default RegistrationForm;

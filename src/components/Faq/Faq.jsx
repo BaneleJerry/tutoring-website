@@ -16,7 +16,7 @@ const faqs = [
   {
     question: "What does the tutoring fee include?",
     answer:
-      "We have recorded sessions of the live classes, so students don’t miss out on work.Students can watch the session at their own pace before the next class.",
+      "For R499/month, your child receives tuition for up to 4 subjects, group and one-on-one online tutoring sessions, access to downloadable notes, past exam papers, and learning guides, plus performance check-ins and academic feedback.",
   },
   {
     question: "What is the session schedule?",
@@ -31,7 +31,7 @@ const faqs = [
   {
     question: "What happens if a session is missed?",
     answer:
-      "If a student misses a session without 24-hour notice, it is not refundable. However, we do offer make-up sessions for valid reasons (technical issues, emergencies, etc.) when notified in advance.",
+      "We have recorded sessions of the live classes, so students don’t miss out on work.Students can watch the session at their own pace before the next class",
   },
   {
     question: "How are payments made?",
