@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tutoring-website/static/css/main.db814901.css",
-    "main.js": "/tutoring-website/static/js/main.6a547d1f.js",
+    "main.css": "/tutoring-website/static/css/main.2d2db19a.css",
+    "main.js": "/tutoring-website/static/js/main.e2537626.js",
     "static/js/453.08439a1f.chunk.js": "/tutoring-website/static/js/453.08439a1f.chunk.js",
     "static/media/sbu.jpg": "/tutoring-website/static/media/sbu.dca3d6e13728f5b4e411.jpg",
     "static/media/student-tutor.jpg": "/tutoring-website/static/media/student-tutor.d773c6b058da17655427.jpg",
@@ -25,12 +25,12 @@
     "static/media/tik-tok.png": "/tutoring-website/static/media/tik-tok.c318ec553ece991e2d32.png",
     "static/media/instagram.png": "/tutoring-website/static/media/instagram.9836f120000f0e2b6e3c.png",
     "index.html": "/tutoring-website/index.html",
-    "main.db814901.css.map": "/tutoring-website/static/css/main.db814901.css.map",
-    "main.6a547d1f.js.map": "/tutoring-website/static/js/main.6a547d1f.js.map",
+    "main.2d2db19a.css.map": "/tutoring-website/static/css/main.2d2db19a.css.map",
+    "main.e2537626.js.map": "/tutoring-website/static/js/main.e2537626.js.map",
     "453.08439a1f.chunk.js.map": "/tutoring-website/static/js/453.08439a1f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.db814901.css",
-    "static/js/main.6a547d1f.js"
+    "static/css/main.2d2db19a.css",
+    "static/js/main.e2537626.js"
   ]
 }
