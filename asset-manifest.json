@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/tutoring-website/static/css/main.2d2db19a.css",
-    "main.js": "/tutoring-website/static/js/main.e2537626.js",
+    "main.css": "/tutoring-website/static/css/main.ffb52214.css",
+    "main.js": "/tutoring-website/static/js/main.ac1249bb.js",
     "static/js/453.08439a1f.chunk.js": "/tutoring-website/static/js/453.08439a1f.chunk.js",
     "static/media/sbu.jpg": "/tutoring-website/static/media/sbu.dca3d6e13728f5b4e411.jpg",
     "static/media/student-tutor.jpg": "/tutoring-website/static/media/student-tutor.d773c6b058da17655427.jpg",
     "static/media/thando.jpg": "/tutoring-website/static/media/thando.0b0d6a9890d3ba1c7a13.jpg",
     "static/media/phakama.jpg": "/tutoring-website/static/media/phakama.4e0929372d83039d8b6c.jpg",
+    "static/media/female student siting-2.jpg": "/tutoring-website/static/media/female student siting-2.73ec6ed5eb69c9193ef0.jpg",
+    "static/media/male up.jpg": "/tutoring-website/static/media/male up.23c651c162c000734890.jpg",
+    "static/media/sitting students-2.jpg": "/tutoring-website/static/media/sitting students-2.e61cb117a6cdf0bb367c.jpg",
     "static/media/lerato.jpeg": "/tutoring-website/static/media/lerato.40216ce7f4f922a09d76.jpeg",
     "static/media/boitumelo 2.jpg": "/tutoring-website/static/media/boitumelo 2.7316dfa00ae727839bad.jpg",
     "static/media/Lumos-logo-Black.png": "/tutoring-website/static/media/Lumos-logo-Black.fba0a21df8ef3d7738f5.png",
-    "static/media/_MGL4220 (1).jpg": "/tutoring-website/static/media/_MGL4220 (1).979a624eb03981014ba3.jpg",
+    "static/media/hero-desktop-1920x800.jpg": "/tutoring-website/static/media/hero-desktop-1920x800.0d80c6e138d94b350f50.jpg",
     "static/media/hero-tablet-1280x900.jpg": "/tutoring-website/static/media/hero-tablet-1280x900.74b9003dfd2a9ba72433.jpg",
     "static/media/hero-desktop.jpg": "/tutoring-website/static/media/hero-desktop.b82c94ffdc628db7907e.jpg",
     "static/media/Siyabonga1.jpg": "/tutoring-website/static/media/Siyabonga1.c3e69960b07d8cd67314.jpg",
@@ -25,12 +28,12 @@
     "static/media/tik-tok.png": "/tutoring-website/static/media/tik-tok.c318ec553ece991e2d32.png",
     "static/media/instagram.png": "/tutoring-website/static/media/instagram.9836f120000f0e2b6e3c.png",
     "index.html": "/tutoring-website/index.html",
-    "main.2d2db19a.css.map": "/tutoring-website/static/css/main.2d2db19a.css.map",
-    "main.e2537626.js.map": "/tutoring-website/static/js/main.e2537626.js.map",
+    "main.ffb52214.css.map": "/tutoring-website/static/css/main.ffb52214.css.map",
+    "main.ac1249bb.js.map": "/tutoring-website/static/js/main.ac1249bb.js.map",
     "453.08439a1f.chunk.js.map": "/tutoring-website/static/js/453.08439a1f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d2db19a.css",
-    "static/js/main.e2537626.js"
+    "static/css/main.ffb52214.css",
+    "static/js/main.ac1249bb.js"
   ]
 }
