@@ -26,7 +26,7 @@ const Subjects = () => {
     Aos.init({
       duration: 800,
       easing: "ease-in-out",
-      once:false,
+      once: true,
     });
   },[])
 

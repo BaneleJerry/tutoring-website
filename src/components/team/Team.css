@@ -1,41 +1,46 @@
 .team-section {
   padding: 4rem 1rem;
-  background-color: var(--color-bg-light); /* Light grey background */
+  background-color: var(--color-bg-light);
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
 
+/* Heading */
 .team-heading {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: 2.5rem;
-  color: var(--color-primary); /* Black for contrast */
-  letter-spacing: 0.5px;
+  color: var(--color-primary);
+  letter-spacing: 0.4px;
 }
 
+/* Grid */
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 280px));
   gap: 2rem;
+  justify-content: center;
 }
 
+
+/* Card */
 .team-card {
-  background-color: var(--color-highlight); /* White card */
+  background-color: var(--color-highlight);
   border-radius: 1rem;
-  border: 1px solid var(--color-accent-warm); /* Warm subtle border */
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--color-accent-grey);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
   padding: 2rem 1.5rem;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
   position: relative;
   overflow: hidden;
-  animation: fadeInUp 0.6s ease both;
+  animation: fadeInUp 0.5s ease both;
 }
 
 .team-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
 }
 
 /* Avatar */
@@ -47,24 +52,25 @@
   margin: 0 auto 1rem auto;
   border: 3px solid var(--color-accent-grey);
   background-color: var(--color-highlight);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
-/* Hover Glow Effect */
+/* Hover effect */
 .team-card:hover .team-avatar {
-  transform: scale(1.08);
-  border-color: var(--color-primary);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  transform: scale(1.06);
+  border-color: var(--color-accent-primary);
+  box-shadow: 0 0 12px rgba(1, 44, 148, 0.25);
 }
 
-/* Text Styles */
+/* Name */
 .team-name {
   font-size: 1.25rem;
   font-weight: 600;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.3rem;
   color: var(--color-primary);
 }
 
+/* Role */
 .team-role {
   font-size: 0.95rem;
   color: var(--color-secondary);
@@ -73,18 +79,19 @@
   font-weight: 500;
 }
 
+/* Description */
 .team-description {
   font-size: 0.9rem;
-  color: var(--color-accent-grey);
+  color: var(--color-secondary);
   line-height: 1.6;
   margin-top: 0.5rem;
 }
 
-/* Fade-in animation */
+/* Animation */
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(16px);
   }
   to {
     opacity: 1;

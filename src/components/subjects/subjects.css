@@ -1,5 +1,5 @@
 .subjects-section {
-  background-color: #f8f9fb;
+  background-color: var(--color-bg-light);
   padding: 4rem 2rem;
   text-align: center;
 }
@@ -9,65 +9,73 @@
   margin: 0 auto;
 }
 
+/* Heading */
 .subjects-section h2 {
   font-size: 2.2rem;
   margin-bottom: 2rem;
-  color: #222;
+  color: var(--color-primary);
 }
+
+/* Intro text */
 .subjects-intro {
   font-size: 1.1rem;
-  color: #555;
+  color: var(--color-secondary);
   max-width: 800px;
   margin: 0 auto 3rem auto;
   line-height: 1.6;
 }
 
+/* Grid */
 .subjects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 2rem;
 }
 
+/* Card */
 .subject-card {
-  background-color: #fff;
+  background-color: var(--color-highlight);
   border-radius: 12px;
   padding: 2rem 1rem;
+  border: 1px solid var(--color-accent-grey);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .subject-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
 }
 
+/* Icon */
 .subject-card img {
   width: 60px;
   height: 60px;
   margin-bottom: 1rem;
 }
 
+/* Subject title */
 .subject-card h3 {
   font-size: 1.2rem;
-  color: #333;
+  color: var(--color-primary);
 }
 
+/* Attribution */
 .attribution {
   margin-top: 3rem;
   font-size: 0.85rem;
-  color: #666;
+  color: var(--color-secondary);
   text-align: center;
   line-height: 1.6;
 }
 
 .attribution a {
-  color: #00bfa6;
+  color: var(--color-accent-primary);
   font-weight: 500;
   text-decoration: underline;
-  transition: color 0.3s ease, text-decoration 0.3s ease;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
 }
 
 .attribution a:hover {
-  color: #007f6d;
   text-decoration: none;
 }

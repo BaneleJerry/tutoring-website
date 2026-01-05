@@ -1,14 +1,21 @@
 :root {
-/* Colors from flyer */
---color-primary: #000000;      /* Primary (Black) - Main text, headers, and logo */
-  --color-secondary: #333333;    /* Secondary (Dark Grey) - Body text, borders, and dividers */
-  --color-accent-grey: #A6A6A6;  /* Accent Grey - Muted accents or subtext */
-  --color-bg-light: #F5F5F5;     /* Background Light Grey - Page or section background */
-  --color-highlight: #FFFFFF;    /* Highlight / Soft White - Containers, cards, text areas */
-  --color-accent-warm: #EAE8E6;
+  /* === Brand Colors (Adjusted) === */
 
-  /* Typography */
-  --font-sans: "Segoe UI", sans-serif;
+  --color-primary: #000000;        /* Black – main headings, logo, strong text */
+  --color-secondary: #1F2937;      /* Dark neutral – body text (softer than pure black) */
+
+  --color-accent-grey: #D1D3D4;    /* Dust grey – borders, dividers, inputs */
+
+  --color-bg-light: #E7E6DD;       /* Butter cream – section backgrounds, hero */
+  --color-highlight: #FFFFFF;      /* White – cards, containers */
+
+  --color-accent-warm: #7489B9;    /* Soft blue – subtle highlights, icons */
+  --color-accent-primary: #012C94; /* Deep blue – CTAs, buttons, links */
+
+
+  /* === Typography === */
+  --font-sans: "Segoe UI", system-ui, sans-serif;
+
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
   --font-size-lg: 1.25rem;
@@ -19,15 +26,19 @@
   --font-weight-normal: 400;
   --font-weight-bold: 700;
 
-  /* Spacing (use for padding/margin/gap) */
+
+  /* === Spacing === */
   --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 2rem;
   --space-lg: 3rem;
   --space-xl: 4rem;
 
-  /* Border radius */
+
+  /* === Border Radius === */
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-lg: 16px;
+
+  --header-height: 55px;
 }

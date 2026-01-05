@@ -9,6 +9,8 @@ import Contact from "../components/contact us/contact";
 import Pricing from "../components/pricing/pricing";
 import TeamSection from "../components/team/teamSection";
 import { useHashScroll } from "../hooks/useHashScroll.";
+import Review from "../components/review/Reviews";
+import FAQPage from "../components/Faq/Faq";
 
 const Home = () => {
   useHashScroll();
@@ -16,9 +18,11 @@ const Home = () => {
     <>
       <Hero />
       <About />
+      <Review />
       <Subjects />
       <Pricing />
       <TeamSection />
+      <FAQPage />
       <Contact />
 
       {/* <Features /> */}

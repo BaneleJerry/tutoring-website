@@ -4,8 +4,21 @@ import { useNavigate } from "react-router-dom";
 
 const plans = [
   {
+    title: "Registration Fee",
+    price: "R99",
+    period: "/ Once Off",
+    type: "required",
+    benefits: [
+      "Covers full student onboarding and Lumos profile setup",
+      "Provides access to learning materials, worksheets, and baseline assessments",
+      "Secures the student’s tutoring slot and activates their Lumos account",
+    ],
+  },
+  {
     title: "Standard Plan",
     price: "R499",
+    period: "/ month",
+    type: "monthly",
     benefits: [
       "Access to all subjects with no extra charges per subject",
       "One fixed monthly payment for predictable budgeting",
@@ -15,10 +28,22 @@ const plans = [
   {
     title: "Family Special (2 Members)",
     price: "R799",
+    period: "/ month",
+    type: "monthly",
     benefits: [
       "Covers two family members under one discounted plan",
       "Full access to all subjects for both members",
       "Affordable option for families seeking flexible learning support",
+    ],
+  },
+  {
+    title: "One-on-One Plan",
+    price: "R149",
+    period: "/ hour",
+    type: "hourly",
+    benefits: [
+      "Dedicated one-on-one tutoring for one selected subject",
+      "Personalised lessons tailored to the student’s pace and goals",
     ],
   },
 ];
@@ -29,27 +54,31 @@ const Pricing = () => {
   return (
     <section className="pricing-section">
       <div className="pricing-container">
-        <h2>Investment in Education</h2>
-        <p className="pricing-intro">
-          Our Transparent Fee Structure. This comprehensive model eliminates the
-          burden of per-subject fees, encouraging students to explore different
-          areas of study and receive help in all their challenging subjects
-          without financial constraints.
-          <br />
-          <br />
-          This model not only provides exceptional value but also simplifies
-          budgeting for parents, making quality tutoring accessible and
-          predictable. It demonstrates our commitment to making premium
-          educational support a viable option for more South African families.
-        </p>
+        <h2>Tutoring Fees</h2>
 
         <div className="pricing-grid">
           {plans.map((plan, index) => (
-            <div className="pricing-card" key={index}>
+            <div className={`pricing-card ${plan.type}`} key={index}>
+              {plan.type === "required" && (
+                <span className="badge required">Compulsory</span>
+              )}
+              {plan.type === "hourly" && (
+                <span className="badge hourly">One-on-One</span>
+              )}
+
               <h3>{plan.title}</h3>
+
               <div className="price">
-                {plan.price} <span>/ month</span>
+                {plan.price} <span>{plan.period}</span>
               </div>
+
+              {plan.type === "required" && (
+                <p className="plan-note">Required for all students</p>
+              )}
+              {plan.type === "hourly" && (
+                <p className="plan-note">Pay only for booked sessions</p>
+              )}
+
               <ul className="benefits-list">
                 {plan.benefits.map((benefit, i) => (
                   <li key={i}>{benefit}</li>
@@ -59,11 +88,11 @@ const Pricing = () => {
           ))}
         </div>
 
-        <div className="faq-button-container">
+        {/* <div className="faq-button-container">
           <button className="faq-button" onClick={() => navigate("/faq")}>
             Frequently Asked Questions
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

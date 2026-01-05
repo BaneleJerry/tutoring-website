@@ -1,65 +1,73 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../styles/theme.css";
 import "./Faq.css";
 
 const faqs = [
   {
-    question: "Who are the tutors?",
+    question: "How do you select your online tutors?",
     answer:
-      "Our tutors are high-performing university students and graduates who have been carefully selected based on their academic excellence, teaching ability, and passion for helping others. Many are pursuing degrees in education, science, commerce, or related fields.",
+      "Our tutors are carefully selected high-performing university students and graduates. Each tutor is screened based on academic results, communication skills, and a passion for teaching.",
   },
   {
-    question: "Is my child safe?",
+    question: "Why should I get an online tutor?",
     answer:
-      "Absolutely. We follow a strict Child Protection Policy. All sessions are hosted on secure, private platforms, and tutors are trained to maintain professionalism and create a safe learning environment. Communication is monitored by our admin team when necessary.",
+      "Online tutoring provides flexibility, personalised learning, and access to expert tutors from anywhere, helping students improve confidence and academic performance.",
   },
   {
-    question: "What does the tutoring fee include?",
+    question: "Where do you offer tutors?",
     answer:
-      "For R499/month, your child receives tuition for up to 4 subjects, group and one-on-one online tutoring sessions, access to downloadable notes, past exam papers, and learning guides, plus performance check-ins and academic feedback.",
+      "Our tutoring services are offered online across South Africa, allowing students to learn from the comfort of their homes.",
   },
   {
-    question: "What is the session schedule?",
+    question: "What do I need for online tutoring?",
     answer:
-      "Sessions are offered 2–5 times a week per student, with each session lasting up to 1 hour 30 minutes. Students receive a timetable for afternoon classes. For one-on-one sessions, students can consult with their respective tutors for availability.",
+      "Students need a stable internet connection, a device (laptop, tablet, or phone), and basic stationery. All lessons are conducted on secure online platforms.",
   },
   {
-    question: "How do I track my child’s progress?",
+    question: "What subjects do you offer for online tutoring?",
     answer:
-      "We provide frequent performance updates, access to tutors for feedback, and a dedicated admin contact for questions. Parents can also receive progress summaries and recommendations.",
+      "We offer Mathematics, Physical Science, Life Sciences, Accounting, Business Studies, Geography, and more depending on availability.",
   },
   {
-    question: "What happens if a session is missed?",
+    question: "Can I schedule lessons to fit my timetable?",
     answer:
-      "We have recorded sessions of the live classes, so students don’t miss out on work.Students can watch the session at their own pace before the next class",
+      "Yes. We offer flexible scheduling, including group sessions and one-on-one lessons arranged around the student’s availability.",
   },
   {
-    question: "How are payments made?",
+    question: "Is online tutoring as effective as in-person tutoring?",
     answer:
-      "Payments are made monthly via bank transfer. Invoices and receipts are issued for transparency. The fee includes a standard monthly tuition of R499.",
-  },
-  {
-    question: "How do we start?",
-    answer:
-      "Once your child registers, we’ll contact you within 72 hours to confirm consent, explain the tutoring structure, and send the necessary paperwork. Your child will then be added to the correct subject group and introduced to their tutor.",
+      "Yes. Online tutoring is just as effective, offering interactive tools, recorded sessions, and personalised attention tailored to each student.",
   },
 ];
 
 export default function FAQPage() {
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const toggleFAQ = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
   return (
     <div className="faq-container">
-      <h1 className="faq-title">Parent FAQ</h1>
-      <p className="faq-intro">
-        Welcome to Lumos Tutoring Academy! We understand that choosing the right
-        academic support for your child is an important decision. Below are some
-        frequently asked questions from parents to help you feel confident and
-        informed about partnering with us.
-      </p>
+      <h1 className="faq-title">Online Tutor FAQs</h1>
+
       <div className="faq-list">
         {faqs.map((faq, index) => (
-          <div key={index} className="faq-item">
-            <h2 className="faq-question">{faq.question}</h2>
-            <p className="faq-answer">{faq.answer}</p>
+          <div
+            key={index}
+            className={`faq-item ${activeIndex === index ? "active" : ""}`}
+            onClick={() => toggleFAQ(index)}
+          >
+            <div className="faq-question-row">
+              <h2 className="faq-question">{faq.question}</h2>
+              <span className="faq-icon">
+                {activeIndex === index ? "−" : "+"}
+              </span>
+            </div>
+
+            {activeIndex === index && (
+              <p className="faq-answer">{faq.answer}</p>
+            )}
           </div>
         ))}
       </div>

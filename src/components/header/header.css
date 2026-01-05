@@ -1,15 +1,16 @@
-/* HEADER BASE */
+/* ================= HEADER BASE ================= */
 .header {
-  background-color: var(--color-highlight);
+  background-color: var(--color-bg-light);
   padding: 0.75rem 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   border-radius: 0 0 12px 12px;
   position: sticky;
+  height: var(--header-height);
   top: 0;
   z-index: 100;
 }
 
-/* LAYOUT */
+/* ================= LAYOUT ================= */
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -19,7 +20,7 @@
   padding: 0 1.5rem;
 }
 
-/* LEFT SIDE */
+/* ================= LEFT SIDE ================= */
 .header-left {
   display: flex;
   align-items: center;
@@ -29,7 +30,6 @@
 .logo {
   width: 55px;
   height: auto;
-  filter: brightness(0); /* keeps logo black on white bg */
 }
 
 .site-title {
@@ -37,71 +37,78 @@
   color: var(--color-primary);
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.4px;
   margin: 0;
 }
 
-/* NAVIGATION */
+/* ================= NAVIGATION ================= */
 .header-nav {
   display: flex;
   gap: 1.5rem;
-  flex-wrap: wrap;
+  align-items: center;
   transition: all 0.3s ease;
 }
 
-.header-nav a {
+.header-nav a,
+.header-nav .nav-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
   text-decoration: none;
   color: var(--color-secondary);
   font-weight: 500;
   font-size: 1rem;
-  transition: color 0.3s ease, transform 0.2s ease;
   position: relative;
+  transition: color 0.25s ease, transform 0.2s ease;
 }
 
 /* Underline hover effect */
-.header-nav a::after {
+.header-nav a::after,
+.header-nav .nav-btn::after {
   content: "";
   position: absolute;
   width: 0%;
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: var(--color-accent-grey);
+  background-color: var(--color-accent-primary);
   transition: width 0.3s ease;
 }
 
-.header-nav a:hover {
-  color: var(--color-primary);
+.header-nav a:hover,
+.header-nav .nav-btn:hover {
+  color: var(--color-accent-primary);
   transform: translateY(-1px);
 }
 
-.header-nav a:hover::after {
+.header-nav a:hover::after,
+.header-nav .nav-btn:hover::after {
   width: 100%;
 }
 
-/* MOBILE MENU BUTTON */
+/* ================= MOBILE MENU BUTTON ================= */
 .menu-toggle {
   display: none;
   background: none;
   border: none;
   color: var(--color-secondary);
-  font-size: 1.5rem;
   cursor: pointer;
-  transition: color 0.3s ease;
-  max-width: fit-content;
+  transition: color 0.25s ease;
 }
 
 .menu-toggle:hover {
-  color: var(--color-primary);
+  color: var(--color-accent-primary);
 }
 
-/* MOBILE RESPONSIVENESS */
+/* ================= MOBILE RESPONSIVENESS ================= */
 @media (max-width: 790px) {
   .menu-toggle {
     display: block;
   }
 
-  /* Hide site name but keep logo visible */
+  /* Hide site title on small screens */
   .site-title {
     display: none;
   }
@@ -112,19 +119,20 @@
     width: 100%;
     background: var(--color-highlight);
     border-top: 1px solid var(--color-accent-grey);
-    margin-top: 0.5rem;
-    padding: 0.8rem 0;
+    margin-top: 0.75rem;
+    padding: 0.75rem 0;
+    gap: 0.75rem;
   }
 
   .header-nav.open {
     display: flex;
-    animation: slideDown 0.4s ease forwards;
+    animation: slideDown 0.35s ease forwards;
   }
 
   @keyframes slideDown {
     from {
       opacity: 0;
-      transform: translateY(-10px);
+      transform: translateY(-8px);
     }
     to {
       opacity: 1;
@@ -132,27 +140,18 @@
     }
   }
 
-  .header-nav a {
-    padding: 0.6rem 1rem;
-    font-size: 1rem;
-    color: var(--color-secondary);
-  }
-
-  .header-nav a:hover {
-    color: var(--color-primary);
+  .header-nav a,
+  .header-nav .nav-btn {
+    padding: 0.6rem 1.25rem;
+    width: 100%;
+    text-align: left;
   }
 }
 
-.header-nav .nav-btn {
-  background: none;
-  border: none;
-  color: var(--color-secondary);
-  font: inherit;
-  cursor: pointer;
-  text-decoration: none;
-  padding: 0;
-}
-
-.header-nav .nav-btn:hover {
-  color: var(--color-accent-grey);
+/* ================= ACCESSIBILITY ================= */
+.header-nav a:focus-visible,
+.header-nav .nav-btn:focus-visible,
+.menu-toggle:focus-visible {
+  outline: 2px solid var(--color-accent-primary);
+  outline-offset: 4px;
 }

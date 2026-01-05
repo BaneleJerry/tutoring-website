@@ -1,105 +1,131 @@
 .pricing-section {
-  background-color: var(--color-bg-light); /* Soft neutral background */
+  background: var(--color-bg-light);
   padding: 4rem 1rem;
-  text-align: center;
+  
 }
 
 .pricing-container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .pricing-container h2 {
-  font-size: 2.5rem;
-  color: var(--color-primary); /* Black for strong contrast */
-  margin-bottom: 1rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--color-primary);
 }
 
-.pricing-intro {
-  font-size: 1.05rem;
-  color: var(--color-secondary); /* Dark grey for readability */
-  max-width: 800px;
-  margin: 0 auto 3rem auto;
-  line-height: 1.6;
-}
-
+/* GRID */
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
-  margin-top: 2rem;
 }
 
+/* CARD BASE */
 .pricing-card {
-  background-color: var(--color-highlight); /* Soft white cards */
-  border-radius: 12px;
+  position: relative;
+  background: var(--color-highlight);
+  border: 1px solid var(--color-accent-grey);
   padding: 2rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-  border: 1px solid var(--color-accent-warm); /* Subtle warm border */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .pricing-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
-.pricing-card h3 {
-  font-size: 1.4rem;
-  color: var(--color-primary);
-  margin-bottom: 1rem;
+/* CARD TYPES */
+.pricing-card.required {
+  border-left: 5px solid var(--color-accent-primary);
+}
+
+.pricing-card.hourly {
+  border-left: 5px solid var(--color-accent-warm);
+}
+
+.pricing-card.monthly {
+  border-left: 5px solid transparent;
+}
+
+/* BADGES */
+.badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  padding: 4px 12px;
+  font-size: 0.7rem;
+  border-radius: 999px;
   font-weight: 600;
+  letter-spacing: 0.4px;
 }
 
+.badge.required {
+  background: var(--color-accent-primary);
+  color: #fff;
+}
+
+.badge.hourly {
+  background: var(--color-accent-warm);
+  color: #fff;
+}
+
+/* TITLES */
+.pricing-card h3 {
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+}
+
+/* PRICE */
 .price {
   font-size: 2rem;
-  color: var(--color-secondary);
-  font-weight: bold;
-  margin-bottom: 1rem;
+  font-weight: 700;
+  color: var(--color-primary);
 }
 
 .price span {
-  font-size: 1rem;
-  color: var(--color-accent-grey);
-}
-
-.pricing-card p {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: var(--color-secondary);
-  line-height: 1.6;
 }
 
+/* PLAN NOTE */
+.plan-note {
+  margin-top: 6px;
+  font-size: 0.75rem;
+  color: var(--color-secondary);
+}
+
+/* BENEFITS */
 .benefits-list {
-  list-style: disc;
-  margin: 1rem 0 0 1.5rem;
-  text-align: left;
+  margin-top: 1.5rem;
+  padding-left: 1rem;
 }
 
 .benefits-list li {
-  margin-bottom: 0.5rem;
-  line-height: 1.4;
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+  color: var(--color-secondary);
 }
 
-
-/* --- FAQ Button --- */
+/* FAQ BUTTON */
 .faq-button-container {
   text-align: center;
   margin-top: 3rem;
 }
 
-
 .faq-button {
-  background-color: var(--color-primary); /* Strong black for contrast */
-  color: var(--color-highlight);
-  padding: 12px 28px;
-  font-size: 1rem;
+  background: var(--color-accent-primary);
+  color: #fff;
   border: none;
-  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background 0.2s ease;
 }
 
 .faq-button:hover {
-  background-color: var(--color-secondary); /* Slightly softer dark tone */
-  transform: translateY(-3px);
+  background: #001f6b;
 }
