@@ -1,7 +1,5 @@
 import React from "react";
 import "./pricing.css";
-import { useNavigate } from "react-router-dom";
-
 const plans = [
   {
     title: "Registration Fee",
@@ -48,9 +46,7 @@ const plans = [
   },
 ];
 
-const Pricing = () => {
-  const navigate = useNavigate();
-
+const Pricing = () => { 
   return (
     <section className="pricing-section">
       <div className="pricing-container">

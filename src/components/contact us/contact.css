@@ -1,101 +1,68 @@
-/* SECTION */
-.contact-section {
-  background-color: var(--color-bg-light);
-  padding: 4rem 2rem;
+.contact-primary {
+  background: var(--color-bg-light);
+  padding: 2.5rem;
+  border-radius: 16px;
+  text-align: center;
 }
 
-/* CONTAINER */
-.contact-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  gap: 2rem;
-}
-
-/* LEFT SIDE */
-.contact-text {
-  flex: 1;
-  min-width: 300px;
-}
-
-.contact-text h2 {
-  font-size: 2.2rem;
-  color: var(--color-primary);
-  margin-bottom: 1rem;
-}
-
-.contact-text p {
-  font-size: 1.1rem;
-  color: var(--color-secondary);
-  margin-bottom: 2rem;
-}
-
-/* BUTTONS */
-.contact-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.contact-btn {
-  padding: 0.8rem 1.5rem;
-  border-radius: 8px;
+.whatsapp-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #25d366;
+  color: #fff;
+  padding: 14px 24px;
+  border-radius: 50px;
   font-weight: 600;
+  margin: 1.5rem 0;
   text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  color: var(--color-highlight);
-  display: inline-block;
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
+  transition: transform 0.2s ease;
 }
 
-.contact-btn:hover {
+.whatsapp-cta:hover {
   transform: translateY(-2px);
 }
 
-/* BUTTON COLORS (neutral tones to fit flyer aesthetic) */
-.whatsapp {
-  background-color: #4CAF50;
+.whatsapp-cta img {
+  width: 26px;
 }
 
-.whatsapp:hover {
-  background-color: #3b8f41;
-}
-
-.email {
-  background-color: var(--color-secondary);
-}
-
-.email:hover {
-  background-color: #1a1a1a;
-}
-
-.book {
-  background-color: var(--color-accent-grey);
-  color: var(--color-primary);
-}
-
-.book:hover {
-  background-color: #8c8c8c;
-  color: var(--color-highlight);
-}
-
-/* FORM */
-.contact-form {
+.socials-inline {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  justify-content: center;
+  gap: 18px;
   margin-top: 1rem;
 }
 
+.socials-inline img {
+  width: 26px;
+  opacity: 0.85;
+}
+
+.socials-inline img:hover {
+  opacity: 1;
+}
+
+.contact-secondary {
+  padding: 1rem;
+  background: var(--color-bg-light);
+  border-radius: 16px;
+  margin: 2rem;
+  /* padding: auto; */
+  text-align: center;
+  max-width: 700px;
+  justify-self: center;
+}
 .contact-form input,
 .contact-form textarea {
   padding: 0.8rem;
-  border: 1px solid var(--color-accent-grey);
+  border: 1px solid var(--color-accent-warm);
   border-radius: 6px;
   font-size: 1rem;
   background-color: var(--color-highlight);
   color: var(--color-secondary);
+  width: inherit;
 }
 
 .contact-form input:focus,
@@ -106,81 +73,28 @@
 }
 
 /* SUBMIT BUTTON */
-.contact-btn.submit {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  justify-content: center;
-  background-color: var(--color-primary);
-  color: var(--color-highlight);
-  font-weight: 600;
-  padding: 0.8rem 1.5rem;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
 
-.contact-btn.submit:hover {
-  background-color: var(--color-secondary);
-  transform: translateY(-2px);
-}
-
-.icon-img {
+.contact-form img {
   width: 20px;
   height: 20px;
   object-fit: contain;
 }
 
-/* RIGHT SIDE (SOCIALS) */
-.contact-socials {
-  flex: 1;
-  min-width: 300px;
-  background-color: var(--color-highlight);
-  color: var(--color-secondary);
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
-
-.contact-socials h3 {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-  color: var(--color-primary);
-}
-
-.contact-socials ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.contact-socials li {
-  margin: 0.5rem 0;
-}
-
-.contact-socials a {
-  text-decoration: none;
-  font-size: 1.1rem;
-  color: var(--color-secondary);
-  transition: color 0.2s ease;
-}
-
-.contact-socials a:hover {
-  color: var(--color-primary);
-}
-
-.social-link {
-  display: flex;
+.email-btn {
+  width: inherit;
+  display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  text-decoration: none;
-  font-weight: 500;
-  color: var(--color-secondary);
-  margin-bottom: 0.75rem;
+  justify-content: center;
+  gap: 10px;
+  background: #012c94;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
 }
 
-.social-link:hover {
-  color: var(--color-primary);
-  text-decoration: underline;
+.email-btn.submit:hover {
+  background-color: var(--color-secondary);
+  transform: translateY(-2px);
 }

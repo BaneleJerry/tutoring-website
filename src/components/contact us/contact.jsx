@@ -1,10 +1,11 @@
 import React from "react";
-import emailjs from "emailjs-com"; // import EmailJS
+import emailjs from "emailjs-com";
 import "./contact.css";
-import tiktokIcon from "../../assets/icons/tik-tok.png";
-import whatappIcon from "../../assets/icons/whatsapp.png";
+
+import whatsappIcon from "../../assets/icons/whatsapp.png";
 import instagramIcon from "../../assets/icons/instagram.png";
 import facebookIcon from "../../assets/icons/facebook.png";
+import tiktokIcon from "../../assets/icons/tik-tok.png";
 import mailIcon from "../../assets/icons/mail.png";
 
 const Contact = () => {
@@ -13,15 +14,15 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_2suyz6d", // replace with your EmailJS 
-        "template_s5alo6s", 
+        "service_2suyz6d",
+        "template_s5alo6s",
         e.target,
-        "J4x3pca13Ct4869XI" // your public key
+        "J4x3pca13Ct4869XI"
       )
       .then(
-        (result) => {
+        () => {
           alert("Message sent successfully ✅");
-          e.target.reset(); // clear form after sending
+          e.target.reset();
         },
         (error) => {
           alert("Something went wrong ❌: " + error.text);
@@ -32,12 +33,55 @@ const Contact = () => {
   return (
     <section className="contact-section" id="contact">
       <div className="contact-container">
-        {/* Contact Form Section */}
-        <div className="contact-text">
-          <h2>Let’s Get You Started</h2>
+        {/* WhatsApp Primary */}
+        <div className="contact-primary">
+          <h2>Let’s Talk on WhatsApp</h2>
           <p>
-            Whether you're ready to book a session or just want to ask a
-            question, we're here to help. Send us a message and let's connect!
+            The fastest way to reach us. Chat directly with our team and get
+            immediate assistance with bookings, subjects, or questions.
+          </p>
+
+          <a
+            href="https://wa.me/27781861196"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whatsapp-cta"
+          >
+            <img src={whatsappIcon} alt="WhatsApp" />
+            Chat with Us on WhatsApp
+          </a>
+
+          <div className="socials-inline">
+            <a
+              href="https://www.instagram.com/lumos.tutoring.academy/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={instagramIcon} alt="Instagram" />
+            </a>
+            <a
+              href="https://www.facebook.com/Lumos-Tutoring-Academy-61575170955220/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={facebookIcon} alt="Facebook" />
+            </a>
+            <a
+              href="https://www.tiktok.com/@lumos.tutoring.academy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={tiktokIcon} alt="TikTok" />
+            </a>
+          </div>
+        </div>
+
+        {/* Email Secondary */}
+        <div className="contact-secondary">
+          <h3>Prefer Email?</h3>
+          <p>
+            You can also send us a message and we’ll get back to you as soon as
+            possible.
           </p>
 
           <form className="contact-form" onSubmit={sendEmail}>
@@ -50,62 +94,16 @@ const Contact = () => {
             />
             <textarea
               name="message"
-              rows="5"
+              rows="4"
               placeholder="Your Message"
-              required></textarea>
-            <button type="submit" className="contact-btn submit">
-              Send Message
-              <img src={mailIcon} alt="Send" className="icon-img" />
+              required
+            />
+
+            <button type="submit" className="email-btn">
+              Send Email
+              <img src={mailIcon} alt="Send email" />
             </button>
           </form>
-        </div>
-
-        {/* Socials Section */}
-        <div className="contact-socials">
-          <h3>Let's Connect</h3>
-          <p>Follow or reach out to us on any platform:</p>
-          <ul>
-            <li>
-              <a
-                href="https://www.tiktok.com/@lumos.tutoring.academy?_t=ZM-8xxb9zsULUG&_r=1"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social-link">
-                <img src={tiktokIcon} alt="TikTok" className="icon-img" />
-                TikTok
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://wa.me/27781861196"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social-link">
-                <img src={whatappIcon} alt="WhatsApp" className="icon-img" />
-                WhatsApp
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/lumos.tutoring.academy/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social-link">
-                <img src={instagramIcon} alt="Instagram" className="icon-img" />
-                Instagram
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.facebook.com/Lumos-Tutoring-Academy-61575170955220/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social-link">
-                <img src={facebookIcon} alt="Facebook" className="icon-img" />
-                Facebook
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
     </section>
