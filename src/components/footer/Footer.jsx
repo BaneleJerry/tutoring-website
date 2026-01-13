@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
 
         {/* Links Column 1 */}
-        <div className="footer-links">
+        {/* <div className="footer-links">
           <h4>Explore</h4>
           <ul>
             <li><a href="/">Home</a></li>
@@ -23,10 +23,10 @@ const Footer = () => {
             <li><a href="/parents">Parents</a></li>
             <li><a href="/contact">Contact Us</a></li>
           </ul>
-        </div>
+        </div> */}
 
         {/* Links Column 2 */}
-        <div className="footer-links">
+        {/* <div className="footer-links">
           <h4>Legal</h4>
           <ul>
             <li><a href="/terms">Customer Terms & Conditions</a></li>
@@ -34,7 +34,7 @@ const Footer = () => {
             <li><a href="/privacy">Privacy Policy</a></li>
             <li><a href="/careers">Careers</a></li>
           </ul>
-        </div>
+        </div> */}
 
         {/* Contact */}
         <div className="footer-contact">
@@ -43,9 +43,23 @@ const Footer = () => {
           <p>Phone: <a href="tel:0781861196">078 186 1196</a></p>
 
           <div className="footer-socials">
-            <a href="#" aria-label="Facebook">f</a>
-            <a href="#" aria-label="LinkedIn">in</a>
-          </div>
+  <a 
+    href="https://www.facebook.com/Lumos-Tutoring-Academy-61575170955220/"
+    target="_blank" 
+    rel="noopener noreferrer" 
+    aria-label="Facebook"
+  >
+    f
+  </a>
+  <a 
+    href="https://www.linkedin.com/..." 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    aria-label="LinkedIn"
+  >
+    in
+  </a>
+</div>
         </div>
       </div>
 

@@ -10,14 +10,16 @@ import lifeIcon from "../../assets/icons/virus.png"; // Used for Life Science
 import accountingIcon from "../../assets/icons/accounting.png";
 import geographyIcon from "../../assets/icons/geography.png";
 import businessIcon from "../../assets/icons/business-and-finance.png"; // Used for English
+import mathlitIcon from "../../assets/icons/calculating.png"
 
 const subjects = [
-  { title: "Math", icon: mathIcon },
+  { title: "Mathematics", icon: mathIcon },
+  { title: "Mathematics Literacy", icon: mathlitIcon },
   { title: "Physical Science", icon: scienceIcon },
   { title: "Life Science", icon: lifeIcon },
   { title: "Accounting", icon: accountingIcon },
   { title: "Geography", icon: geographyIcon },
-  { title: "Business Studies", icon: businessIcon },
+  { title: "Business Studies", icon: businessIcon }
 ];
 
 const Subjects = () => {

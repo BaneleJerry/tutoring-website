@@ -2,7 +2,7 @@ import "../../styles/theme.css";
 import "../../styles/layout.css";
 import "./header.css";
 import logo from "../../assets/Lumos-logo-Black.png";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -46,9 +46,9 @@ const Header = () => {
 
         {/* Navigation */}
         <nav className={`header-nav ${menuOpen ? "open" : ""}`}>
-          <Link to="/" onClick={() => setMenuOpen(false)}>
+          <button className="nav-btn" onClick={() => handleNavClick("hero-section")}>
             Home
-          </Link>
+          </button>
 
           {/* These call our custom handler */}
           <button
@@ -56,16 +56,19 @@ const Header = () => {
             onClick={() => handleNavClick("subjects")}>
             Subjects
           </button>
+          <button className="nav-btn" onClick={() => handleNavClick("pricing-section")}>
+            Pricing
+          </button>
           <button className="nav-btn" onClick={() => handleNavClick("team")}>
             Team
           </button>
+          <button className="nav-btn" onClick={() => handleNavClick("faq")}>
+            Frequently Asked
+          </button>
+
           <button className="nav-btn" onClick={() => handleNavClick("contact")}>
             Contact
           </button>
-
-          <Link to="/faq" onClick={() => setMenuOpen(false)}>
-            Frequently Asked
-          </Link>
         </nav>
       </div>
     </header>

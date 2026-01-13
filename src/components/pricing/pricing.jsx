@@ -48,7 +48,7 @@ const plans = [
 
 const Pricing = () => { 
   return (
-    <section className="pricing-section">
+    <section className="pricing-section" id="pricing-section">
       <div className="pricing-container">
         <h2>Tutoring Fees</h2>
 

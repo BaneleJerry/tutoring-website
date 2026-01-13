@@ -48,6 +48,7 @@ export default function FAQPage() {
   };
 
   return (
+    <section className="faq" id="faq">
     <div className="faq-container">
       <h1 className="faq-title">Online Tutor FAQs</h1>
 
@@ -72,5 +73,6 @@ export default function FAQPage() {
         ))}
       </div>
     </div>
+  </section>
   );
 }

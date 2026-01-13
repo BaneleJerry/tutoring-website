@@ -12,6 +12,7 @@ import { useHashScroll } from "../hooks/useHashScroll.";
 import Review from "../components/review/Reviews";
 import FAQPage from "../components/Faq/Faq";
 import WhatsAppFloat from "../components/whatsAppFloat/WhatsAppFloat";
+import RegistrationEmbed from "../components/RegistrationEmbed/RegistrationEmbed";
 
 const Home = () => {
   useHashScroll();
@@ -22,6 +23,7 @@ const Home = () => {
       <Review />
       <Subjects />
       <Pricing />
+      <RegistrationEmbed />
       <TeamSection />
       <FAQPage />
       <Contact />
