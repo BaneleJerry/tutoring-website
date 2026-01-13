@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tutoring-website/static/css/main.ffb52214.css",
-    "main.js": "/tutoring-website/static/js/main.ac1249bb.js",
+    "main.css": "/tutoring-website/static/css/main.590ad128.css",
+    "main.js": "/tutoring-website/static/js/main.8f35a66d.js",
     "static/js/453.08439a1f.chunk.js": "/tutoring-website/static/js/453.08439a1f.chunk.js",
     "static/media/sbu.jpg": "/tutoring-website/static/media/sbu.dca3d6e13728f5b4e411.jpg",
     "static/media/student-tutor.jpg": "/tutoring-website/static/media/student-tutor.d773c6b058da17655427.jpg",
@@ -22,18 +22,19 @@
     "static/media/science.png": "/tutoring-website/static/media/science.1bcbd2198a01ed7af403.png",
     "static/media/business-and-finance.png": "/tutoring-website/static/media/business-and-finance.225300328f2c0d8e0f26.png",
     "static/media/math.png": "/tutoring-website/static/media/math.ef69263e08a77f9a32eb.png",
+    "static/media/calculating.png": "/tutoring-website/static/media/calculating.ce1c6bef139be999965e.png",
     "static/media/accounting.png": "/tutoring-website/static/media/accounting.9b9e11624095287367f2.png",
     "static/media/whatsapp.png": "/tutoring-website/static/media/whatsapp.b1b801cf0375045d4f69.png",
     "static/media/mail.png": "/tutoring-website/static/media/mail.f37667403f0f2e9450fe.png",
     "static/media/tik-tok.png": "/tutoring-website/static/media/tik-tok.c318ec553ece991e2d32.png",
     "static/media/instagram.png": "/tutoring-website/static/media/instagram.9836f120000f0e2b6e3c.png",
     "index.html": "/tutoring-website/index.html",
-    "main.ffb52214.css.map": "/tutoring-website/static/css/main.ffb52214.css.map",
-    "main.ac1249bb.js.map": "/tutoring-website/static/js/main.ac1249bb.js.map",
+    "main.590ad128.css.map": "/tutoring-website/static/css/main.590ad128.css.map",
+    "main.8f35a66d.js.map": "/tutoring-website/static/js/main.8f35a66d.js.map",
     "453.08439a1f.chunk.js.map": "/tutoring-website/static/js/453.08439a1f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ffb52214.css",
-    "static/js/main.ac1249bb.js"
+    "static/css/main.590ad128.css",
+    "static/js/main.8f35a66d.js"
   ]
 }
